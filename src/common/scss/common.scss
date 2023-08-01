@@ -1,0 +1,103 @@
+@import './reset';
+@import './var';
+// utils styles
+@import './utils/mixins';
+@import './utils/placeholders';
+// components styles
+@import './backdrop';
+@import '../../components/loader/loader';
+
+// * {
+//   outline: 1px solid gold;
+// }
+
+body.isLoading,
+body.modalIsOpen,
+body.mobileMenuIsOpen {
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: var(--font--body);
+  color: var(--color--black);
+  background-color: var(--color--white);
+}
+main {
+  flex-grow: 1;
+}
+footer {
+  margin-top: auto;
+}
+
+svg {
+  fill: currentColor;
+  pointer-events: none;
+}
+button, a {
+  @extend %cursor;
+}
+
+.section {
+  padding: 16px 0;
+
+  @include breakpoint-min($medium) {
+    padding: 32px 0;
+  }
+}
+.container {
+  width: 100%;
+  padding: 0 var(--padding-small);
+  margin: 0 auto;
+
+  @include breakpoint-min($small) {
+    width: $small;
+  }
+
+  @include breakpoint-min($medium) {
+    width: $medium;
+    padding: 0 $padding-medium;
+  }
+
+  @include breakpoint-min($large) {
+    width: $large;
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+
+  font-family: var(--font--title);
+  text-align: center;
+
+  @include breakpoint-min($large) {
+    font-size: 40px;
+  }
+}
+.subtitle {
+  font-family: var(--font--title);
+  font-size: 24px;
+
+  @include breakpoint-min($large) {
+    font-size: 28px;
+  }
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.isHidden {
+  display: none;
+  pointer-events: none;
+}

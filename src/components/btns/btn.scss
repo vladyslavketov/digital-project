@@ -1,0 +1,21 @@
+.btn {
+  @extend %flex-center-ja;
+  min-width: 40px;
+  height: 20px;
+  padding: 12px;
+
+  color: white;
+
+  background-color: black;
+  @extend %border-radius;
+  @extend %cursor;
+  
+  // &:hover,
+  // &:focus {
+  //   background-color: var(--color__hover);
+  // }
+
+  // &.current {
+  //   background-color: var(--color__accent);
+  // }
+}

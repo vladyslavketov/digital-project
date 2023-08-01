@@ -1,0 +1,63 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  // text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+img, picture, video, canvas, svg, iframe {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+	vertical-align: top;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+button[disabled] {
+  cursor: auto;
+}
+
+// input, textarea, button, select {
+// 	font-family: inherit;
+//   font-size: inherit;
+//   color: inherit;
+//   background-color: transparent;
+// }
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  // font-size: inherit;
+	// font-weight: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+// :active, :hover, :focus {
+//   outline: none;
+// }

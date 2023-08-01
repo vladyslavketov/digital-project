@@ -1,0 +1,11 @@
+@import '/src/common/scss/common.scss';
+@import '/src/components/footer/footer.scss';
+@import '/src/components/loader/loader.scss';
+// components styles
+@import '../../components/logo/logo.scss';
+@import '../../components/nav/nav.scss';
+@import '../../components/header/header.scss';
+
+body {
+  background-color: skyblue;
+}
